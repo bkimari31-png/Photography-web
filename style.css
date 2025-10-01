@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background-image:url(bg.jpg) ;
+    background-size: cover;
+    background-attachment:scroll;
+  color: #3007e4;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: url("images/banner.jpg") center/cover no-repeat;
+  color: blue;
+  text-align: center;
+  padding: 60px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+header .intro {
+  font-size: 1.2rem;
+  font-style: bold;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+       
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Biography */
+#bio {
+  text-align: center;
+}
+
+#bio .profile {
+  width: 150px;
+  border-radius: 50%;
+  border: 4px solid #555;
+  margin: 15px 0;
+}
+
+/* Photo List */
+.photo-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo-list li {
+  text-align: center;
+}
+
+.photo-list img {
+  width: 200px;
+  height: 140px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.photo-list img:hover {
+  transform: scale(1.05);
+  border-color: #0077cc;
+}
+
+.photo-list span {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #0077cc;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #005fa3;
+}
+
+#form-response {
+  margin-top: 10px;
+  text-align: center;
+  color: green;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+  margin-top: 40px;
+}
